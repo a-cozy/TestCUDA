@@ -37,7 +37,6 @@ int main()
 
     vecDouble(in, out, n);
 
-
     end = chrono::system_clock::now();
 
     //clock_t end = clock();

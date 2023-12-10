@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 enable_language(CXX)
 set(CMAKE_CXX_STANDARD 17)
-project(MyCudaProject)
+project(MyCudaProject  LANGUAGES CXX CUDA)
 
 # Create Main project
 set(SOURCES_A
@@ -21,7 +21,7 @@ add_executable(MainA
 # Add sub project
 add_subdirectory(CudaVecDouble)
 target_include_directories(MainA PUBLIC CudaVecDouble)
-target_link_libraries(MainA CudaVecDouble)
+target_link_libraries(MainA PUBLIC CudaVecDouble)
 
 
 # Create Main project
