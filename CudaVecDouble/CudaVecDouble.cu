@@ -9,7 +9,7 @@ __global__ void kernel_vecDouble(int *in, int *out, const int n)
     }
 }
 
-void vecDouble(int *hIn, int *hOut, const int n)
+void vecDouble(int *hIn, int *hOut, const long n)
 {
     int *dIn;
     int *dOut;
